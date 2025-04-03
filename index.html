@@ -6,6 +6,16 @@
     background-size: cover;
 }
 </style>
+<script>
+document.addEventListener('play', function(e){  
+    var audios = document.getElementsByTagName('audio');  
+    for(var i = 0, len = audios.length; i < len;i++){  
+        if(audios[i] != e.target){  
+            audios[i].pause();  
+        }  
+    }  
+}, true);
+</script>
 <h3>Nirvana - Smells Like Teen Spirit (Original)</h3>
 <audio controls>
     <source src="https://caiiiookk.github.io/Nirvana - Smells Like Teen Spirit (Original).mp3" type="audio/mp3">
